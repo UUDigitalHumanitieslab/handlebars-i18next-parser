@@ -20,5 +20,9 @@
   },
   "overrides": {
     "core-js": "latest"
+  },
+  "mocha": {
+    "spec": ["test.mjs"],
+    "require": ["intelli-espower-loader"]
   }
 }
