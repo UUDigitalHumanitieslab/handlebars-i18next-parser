@@ -5,5 +5,20 @@
   "main": "index.js",
   "repository": "https://github.com/UUDigitalHumanitieslab/handlebars-i18next-parser.git",
   "author": "Julian Gonggrijp, Digital Humanities Lab, Utrecht University",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "i18next-parser": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-transform-modules-umd": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "intelli-espower-loader": "^1.1.0",
+    "mocha": "^9.2.2",
+    "power-assert": "^1.6.1"
+  },
+  "overrides": {
+    "core-js": "latest"
+  }
 }
