@@ -1,0 +1,9 @@
+{
+  "name": "handlebars-i18next-parser",
+  "version": "0.0.0",
+  "description": "Parser/lexer for the combination of handlebars-i18next and i18next-parser",
+  "main": "index.js",
+  "repository": "https://github.com/UUDigitalHumanitieslab/handlebars-i18next-parser.git",
+  "author": "Julian Gonggrijp, Digital Humanities Lab, Utrecht University",
+  "license": "BSD-3-Clause"
+}
