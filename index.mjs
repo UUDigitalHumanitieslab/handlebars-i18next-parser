@@ -1,3 +1,3 @@
-import HbsBaseLexer from 'i18next-parser/dist/lexers/handlebars-lexer.js';
+import { HandlebarsLexer } from 'i18next-parser';
 
-export default class HbsI18nLexer extends HbsBaseLexer {}
+export default class HbsI18nLexer extends HandlebarsLexer {}

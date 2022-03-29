@@ -7,7 +7,7 @@
   "author": "Julian Gonggrijp, Digital Humanities Lab, Utrecht University",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "i18next-parser": "^6.0.0"
+    "i18next-parser": "^6.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
@@ -22,7 +22,11 @@
     "core-js": "latest"
   },
   "mocha": {
-    "spec": ["test.mjs"],
-    "require": ["intelli-espower-loader"]
+    "spec": [
+      "test.mjs"
+    ],
+    "require": [
+      "intelli-espower-loader"
+    ]
   }
 }
