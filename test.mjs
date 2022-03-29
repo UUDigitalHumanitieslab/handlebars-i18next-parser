@@ -8,7 +8,7 @@ function assertExtract(lexer, content, result) {
 
 describe('Lexer', function() {
     beforeEach(function() {
-        this.lexer = new Lexer({functions: ['i18n']});
+        this.lexer = new Lexer();
     });
 
     // The first few tests have been roughly copied from the
