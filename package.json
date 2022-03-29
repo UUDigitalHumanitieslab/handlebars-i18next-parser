@@ -6,6 +6,9 @@
   "repository": "https://github.com/UUDigitalHumanitieslab/handlebars-i18next-parser.git",
   "author": "Julian Gonggrijp, Digital Humanities Lab, Utrecht University",
   "license": "BSD-3-Clause",
+  "scripts": {
+    "test": "mocha"
+  },
   "dependencies": {
     "i18next-parser": "^6.0.1"
   },
