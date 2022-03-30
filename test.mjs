@@ -61,9 +61,9 @@ describe('Lexer', function() {
 
     // The remaining tests represent our custom behavior.
 
-    it('extracts keys from block helpers', function() {
-        assertExtract(this.lexer, "<p>{{#i18n 'first'}}{{/i18n}}</p>", [
-            {key: 'first'},
+    it('extracts keys and default content from block helpers', function() {
+        assertExtract(this.lexer, "<p>{{#i18n 'first'}}bla{{/i18n}}</p>", [
+            {key: 'first', defaultValue: 'bla'},
         ]);
     });
 
@@ -83,9 +83,9 @@ describe('Lexer', function() {
     });
 
     it('extracts multiple blocks on a single line', function() {
-        const content = "<p>{{#i18n 'first'}}{{/i18n}}{{#i18n 'second'}}{{/i18n}}</p>";
+        const content = "<p>{{#i18n 'first'}}bla{{/i18n}}{{#i18n 'second'}}{{/i18n}}</p>";
         assertExtract(this.lexer, content, [
-            {key: 'first'},
+            {key: 'first', defaultValue: 'bla'},
             {key: 'second'},
         ]);
     });
@@ -106,6 +106,8 @@ describe('Lexer', function() {
 
     it('supports interpolation tags inside block default content', function() {
         const content = "<p>{{#i18n 'first'}}default with {{interpolation}} tag{{/i18n}}</p>";
-        assertExtract(this.lexer, content, [{key: 'first'}]);
+        assertExtract(this.lexer, content, [
+            {key: 'first', defaultValue: 'default with {{interpolation}} tag'},
+        ]);
     });
 });
