@@ -1,6 +1,6 @@
 import assert from 'assert';
 
-import Lexer from './index.mjs';
+import Lexer from './index.js';
 
 function assertExtract(lexer, content, result) {
     assert.deepEqual(lexer.extract(content), result);
