@@ -1,6 +1,6 @@
 {
   "name": "handlebars-i18next-parser",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parser/lexer for the combination of handlebars-i18next and i18next-parser",
   "main": "index.js",
   "type": "module",
