@@ -2,11 +2,19 @@
   "name": "handlebars-i18next-parser",
   "version": "1.0.1",
   "description": "Parser/lexer for the combination of handlebars-i18next and i18next-parser",
-  "main": "index.js",
-  "type": "module",
   "repository": "https://github.com/UUDigitalHumanitieslab/handlebars-i18next-parser.git",
   "author": "Julian Gonggrijp, Digital Humanities Lab, Utrecht University",
   "license": "BSD-3-Clause",
+  "keywords": [
+    "handlebars",
+    "hbs",
+    "i18n",
+    "i18next",
+    "lexer",
+    "parser"
+  ],
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "mocha"
   },
