@@ -11,7 +11,7 @@ export default class HbsI18nLexer extends HandlebarsLexer {
         const anything = '([^]*?)';
         const interpolation = `\\{\\{${funcName}\\s+${anything}}}`;
         const blockOpen = `\\{\\{#${funcName}\\s+${anything}}}`;
-        const blockClose = `\\{\\{/${funcName}}}`;
+        const blockClose = `\\{\\{/${funcName}\\s*}}`;
         const block = `${blockOpen}${anything}${blockClose}`;
         const pattern = `${interpolation}|${block}`;
         return this.functionRegex = new RegExp(pattern, 'g');
