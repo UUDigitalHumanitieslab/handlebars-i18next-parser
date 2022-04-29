@@ -77,6 +77,11 @@ describe('Lexer', function() {
         assertExtract(this.lexer, content, [{key: 'first'}]);
     });
 
+    it('supports line breaks inside Handlebars block close tags', function() {
+        const content = "<p>{{#i18n 'first'}}{{/i18n\n}}</p>";
+        assertExtract(this.lexer, content, [{key: 'first'}]);
+    });
+
     it('supports line breaks between Handlebars block tags', function() {
         const content = "<p>{{#i18n 'first'}}\n{{/i18n}}</p>";
         assertExtract(this.lexer, content, [{key: 'first'}]);
